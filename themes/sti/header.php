@@ -133,23 +133,7 @@ src="https://www.facebook.com/tr?id=1955788891300824&ev=PageView&noscript=1"
 					<span class="glyphicon glyphicon-remove"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nav-primary-collapse">
-					<?php
-						wp_nav_menu([
-							'container'      => false,
-							'theme_location' => 'header_navigation_1',
-							'fallback_cb'    => false,
-						])
-					?>
-					<a class="logo hidden-xs" href="<?= home_url() ?>">
-						<img src="<?php the_theme_url('assets/img/logo.jpg') ?>" height="34" alt="WIDEX">
-					</a>
-					<?php
-						wp_nav_menu([
-							'container'      => false,
-							'theme_location' => 'header_navigation_2',
-							'fallback_cb'    => false,
-						])
-					?>
+					
 					<?php  echo the_language_switcher()  ?>
 				</div>
 			</nav>
