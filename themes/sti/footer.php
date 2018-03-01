@@ -3,17 +3,19 @@
 
 	<footer id="contentinfo" role="contentinfo">
 	<div class="container-fluid">
+        <div class="col-sm-2">
+		<img src="<?php site_url(); ?>/assets/img/cco-logo.jpg" />
+	</div>
+        <div class="col-sm-2">
+		TEXT
+	</div>
+	<div class="col-sm-2  footerlinks">
+		
+		<a href="<?= get_permalink(145) ?>"><?= trans('Contact', 'Contacte') ?></a>
+        <a href="<?= get_permalink(145) ?>"><?= trans('Privacy Policy', 'Politique de protection de la vie privée') ?></a>
+	</div>
 	<div class="col-sm-6">
 		
-	</div>
-	<div class="col-sm-6 footerlinks">
-		<h3><?php if (trans() === 'fr'): ?>
-							LIENS
-						<?php else: ?>
-							Links
-						<?php endif ?>
-		</h3>
-		<a href="<?= get_permalink(145) ?>"><?= trans('Privacy Policy', 'Politique de protection de la vie privée') ?></a>
 	</div></div>
 		
 			<div class="copyright">

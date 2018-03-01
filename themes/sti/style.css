@@ -1,0 +1,210 @@
+/*
+Theme Name:    STI
+Description:   A theme built for STI
+Author:        Hill+Knowlton Strategies
+Author URI:    http://hkstrategies.ca
+*/
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+#menu-item-246 .menu-image-title {
+  display: none;
+}
+#contact-your-mp #form-header {
+  color: #ee5337;
+}
+.header-body {
+  width: 78%;
+}
+
+/* Style The Dropdown Button */
+.section-add-your-voice form .dropbtn {
+  width: 100%;
+  margin-bottom: 0;
+  background-image: url(assets/img/dropdown-icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+#input_container::after {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 14px;
+  content: ' ';
+  border-top: 12px solid #4f8b89;
+  border-color: #4f8b89;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 98;
+}
+.dropdown:hover #input_container::after {
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dropdown .spacer {
+  padding: 5px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 43px;
+    font-size: 14px;
+    background-color: #252525;
+    min-width: 100%;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff!important;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fcc9a6;
+  color: #000!important;
+  font-weight: bold;
+  border-left: 4px solid #ee5337;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #94999e;
+}
+
+#input_container { position:relative; padding:0; margin:0; }
+
+.popover.bottom {
+  margin-top: 8px;
+}
+
+.sm-profession { display: none; }
+
+@media (max-width: 767px) {
+  .sm-profession { display: block; }
+
+  #mobile-profession {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: #252525;
+    font-size: 14px;
+    border-color: #94999e;
+    border-radius: 0;
+    color: #94999e;
+    padding: 7px 12px;
+    background-image: url(assets/img/dropdown-icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  #profession {
+    display: none;
+  }
+  .dropdown .spacer {
+    padding: 0px;
+  }
+  .dropdown {
+    margin-bottom: 0px;
+  }
+}
+
+a.languageswitcher {
+	position: absolute !important;
+	right: 10%;
+	top: 5% !important;
+}
+
+.languageswitcher span {
+	color: #fff !important;
+}
+
+.section-herospace .section-content h1 {
+	color: #fff !important;
+	margin-top: 150px;
+}
+
+.section-herospace .section-content p {
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 20px;
+}
+
+.callstoaction {
+	margin-top: 20px;
+	padding-bottom: 25%;
+}
+
+.section-herospace .call-to-action-1 {
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #d35626;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+    text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.section-herospace .call-to-action-2 {
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px 60px;
+    background: #418ab7;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+    text-decoration: none;
+	text-transform: uppercase;
+}
+
+.col-md-offset-6 {
+	margin-left: 0;
+}
+
+div#patients-cover {
+	padding: 5%;
+}
+
+div#patients-cover .section-content {
+	background: none !important;
+}
+
+div#say-it-louder .col-sm-6 {
+	margin-left: 50%;
+}

@@ -4,9 +4,12 @@
 		<?php the_sub_field('content') ?>
 	</div>
 	<div class="section-action">
-		<a href="/#contact-your-mp" class="call-to-action"><?php the_sub_field('button_text') ?></a>
-	</div>
-    <div class="section-action">
-		<a href="/#say-it-louder" class="call-to-action"><?php the_sub_field('button_text_copy') ?></a>
+        <div class="row">
+<div class="col-sm-6 callstoaction">
+        <a href="/#contact-your-mp" class="call-to-action-1"><?php the_sub_field('button_text') ?></a> <a href="/#say-it-louder" class="call-to-action-2"><?php the_sub_field('button_text_copy') ?></a>
+        </div>
+        
+            <div class="col-sm-6"></div>
+            </div>
 	</div>
 </div>

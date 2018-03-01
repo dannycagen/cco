@@ -8,16 +8,17 @@
 					$description = get_field('social_description','option');
 				?>
 			<p class="sharesocial">
+                <a class="fbshare" data-platform="Facebook" data-permalink="<?= esc_attr($permalink) ?>" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($permalink) ?>"><img src="<?php the_theme_url('assets/img/facebook.png') ?>" height="80" alt="Facebook"><br /><?php if (trans() === 'fr'): ?>
+							Partager sur Facebook
+						<?php else: ?>
+							Share on Facebook
+						<?php endif ?></a>
 				<a class="twshare" data-platform="Twitter"  data-permalink="<?= esc_attr($permalink) ?>" target="_blank" href="https://twitter.com/intent/tweet?url=<?= urlencode($permalink) ?>&amp;text=<?= urlencode($description) ?>"><img src="<?php the_theme_url('assets/img/twitter.png') ?>" height="80" alt="Twitter"><br /><?php if (trans() === 'fr'): ?>
 							Partager sur Twitter
 						<?php else: ?>
 							Tweet your Support
 						<?php endif ?></a>
-					<a class="fbshare" data-platform="Facebook" data-permalink="<?= esc_attr($permalink) ?>" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode($permalink) ?>"><img src="<?php the_theme_url('assets/img/facebook.png') ?>" height="80" alt="Facebook"><br /><?php if (trans() === 'fr'): ?>
-							Partager sur Facebook
-						<?php else: ?>
-							Share on Facebook
-						<?php endif ?></a>
+					
 					
 					
 				</p>

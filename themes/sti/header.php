@@ -17,7 +17,7 @@
 		<script charset="utf-8" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
 	<![endif]-->
 
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,100,600,700,800,400italic">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,300,100,600,700,800,400italic">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -118,25 +118,5 @@ src="https://www.facebook.com/tr?id=1955788891300824&ev=PageView&noscript=1"
 
 
 <div id="wrap">
-	<header id="banner" role="banner" class="container-fluid">
-
-		<div class="row">
-			<a class="logo visible-xs-block" href="<?= home_url() ?>">
-				<img src="<?php the_theme_url('assets/img/logo.jpg') ?>" height="34" alt="WIDEX">
-			</a>
-			<nav class="nav-primary" role="navigation">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-primary-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="glyphicon glyphicon-remove"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="nav-primary-collapse">
-					
-					<?php  echo the_language_switcher()  ?>
-				</div>
-			</nav>
-		</div>
-	</header>
+	
 	<div id="document" role="document">
