@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	
-	<div class="col-sm-6" data-mh="contact-your-mp">
+	<div class="col-sm-5" data-mh="contact-your-mp">
 		<div class="form-wrapper">
 			<form name="addYourVoiceStep1Form" role="form">
 				
@@ -36,50 +36,9 @@
 						<input type="text" class="form-control" id="addYourVoiceStep1FormPostalCode" name="postal_code" placeholder="<?= trans('Your Postal Code', 'Code postal') ?>" required pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]">
 					</div>
 				</div>
-				<?php
-					$professions = [
-						316 => trans('Patient using a support program', 'Patient ayant recours à un programme de soutien'),
-						301 => trans('Someone in my family benefits from a patient support program', 'Quelqu’un dans ma famille bénéficie d’un programme de soutien au patient'),
-						320 => trans('Caregiver of a patient using a support program','Proche aidant d’un patient ayant recours à un programme de soutien'),
-						329 => trans('Healthcare Professional','Professionnel(le) de la santé'),
-						296 => trans('Member of a patient organization','Membre d’une association de patients'),
-						323 => trans('Supporter of this cause','Je soutien cette cause'),
-					];
-				?>
-				<?php if (array_key_exists(get_the_ID(),$professions)): ?>
-					<input type="hidden" name="profession" value="<?= esc_attr($professions[get_the_ID()]) ?>" />
-				<?php else: ?>
-					<input type="hidden" name="profession" value="" />
-					<div class="form-group clearfix">
-						<div class="dropdown">
-							<div id="input_container">
-								<input type="text" id="profession" class="form-control dropbtn" placeholder="<?php _e("[:fr]Quelle description correspond le mieux à votre situation? »[:en]Which best describes you?[:]"); ?>" readonly>
-							</div>
-							<div class="dropdown-content">
-							<?php foreach ($professions as $profession): ?>
-								<a href="#"><?= $profession ?></a>
-							<?php endforeach ?>
-		  					</div>
-						</div>
-					</div>
-					<div class="form-group sm-profession">
-						<fieldset class="ui-field-contain">
-							<select id="mobile-profession">
-								<option value="">
-								<?php if (trans() === 'fr'): ?>
-							Quelle description correspond le mieux à votre situation? »
-						<?php else: ?>
-							Which best describes you?
-						<?php endif ?>
-								
-								<?php _e("[:fr]Quelle description correspond le mieux à votre situation? »[:en]Which best describes you?[:]"); ?></option>
-								<?php foreach ($professions as $profession): ?>
-									<option><?= $profession ?></option>
-								<?php endforeach ?>
-							</select>
-						</fieldset>
-					</div>
-				<?php endif ?>
+				
+				
+
 				<div class="form-group checkbox">
 					<label>
 						<input type="checkbox" name="opt_in">
@@ -88,8 +47,8 @@
 							Sélectionnez cette case si vous souhaitez être informé(e) par courriel des développements liées à l’initiative « La voix des patients »
 							<a href="<?= get_permalink(145) ?>" target="_blank">cliquez ici</a>
 						<?php else: ?>
-							Check this box if you would like us to stay in touch with you via email to share news about this initiative. 
-							<a href="<?= get_permalink(145) ?>" target="_blank">You can read our privacy statement by clicking here.</a>
+							By clicking submit, you agree to be contacted periodically with important updates on the campaign and related matters. You can read our privacy statement by clicking
+							<a href="<?= get_permalink(145) ?>" target="_blank">here.</a>
 						<?php endif ?>
 						</span>
 					</label>
@@ -97,7 +56,7 @@
 				<div class="form-group">
 					<button type="submit" class="btn">
 						<i class="fa fa-spinner fa-spin" style="display:none"></i>
-						<?php _e("[:fr]FAITES ENTENDRE VOTRE VOIX[:en]Make Your Voice Heard[:]"); ?>
+						<?php _e("[:fr]FAITES ENTENDRE VOTRE VOIX[:en]Continue[:]"); ?>
 					</button>
 				</div>
 			</form>

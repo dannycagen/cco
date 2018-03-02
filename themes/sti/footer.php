@@ -4,23 +4,24 @@
 	<footer id="contentinfo" role="contentinfo">
 	<div class="container-fluid">
         <div class="col-sm-2">
-		<img src="<?php site_url(); ?>/assets/img/cco-logo.jpg" />
+		<img src="<?php site_url(); ?>/app/themes/sti/assets/img/cco-logo.jpg" />
 	</div>
         <div class="col-sm-2">
-		TEXT
+		<p>155 Lynden Rd, Unit 2<br />
+Brantford, ON. N3R 8A7<br />
+Tel: (519) 752-2124 Ext.100<br />
+            Fax: (519) 752-3649</p>
 	</div>
 	<div class="col-sm-2  footerlinks">
 		
-		<a href="<?= get_permalink(145) ?>"><?= trans('Contact', 'Contacte') ?></a>
+		<a href="<?= get_permalink(145) ?>" class="contactfooter"><?= trans('Contact', 'Contacte') ?></a>
         <a href="<?= get_permalink(145) ?>"><?= trans('Privacy Policy', 'Politique de protection de la vie privée') ?></a>
 	</div>
 	<div class="col-sm-6">
 		
 	</div></div>
 		
-			<div class="copyright">
-				&copy;<?php echo date('Y') ?> <?= trans('Patients Voice', 'La voix des patients') ?> <br>
-			</div>
+			
 		
 	</footer>
 
