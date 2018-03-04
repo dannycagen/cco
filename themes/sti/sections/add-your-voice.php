@@ -27,7 +27,7 @@
 					<input type="text" class="form-control" id="addYourVoiceStep1FormStreetAddress" name="street_address" placeholder="<?= trans('Enter Your Street Address', 'Adresse') ?>" required>
 				</div>
 				<div class="row">
-					<div class="col-sm-5 form-group">
+					<div class="col-sm-6 form-group">
 						<label class="sr-only" for="addYourVoiceStep1FormCity"><?= trans('Your City', 'Ville') ?></label>
 						<input type="text" class="form-control" id="addYourVoiceStep1FormCity" name="city" placeholder="<?= trans('Your City', 'Ville') ?>" required>
 					</div>

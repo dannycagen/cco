@@ -138,9 +138,19 @@ a.languageswitcher {
 	position: absolute !important;
 	right: 10%;
 	top: 5% !important;
+	font-size: 15px;
+}
+
+a.languageswitcher:hover {
+	text-decoration: underline;
+	color: #fff;
 }
 
 .languageswitcher span {
+	color: #fff !important;
+}
+
+.languageswitcher span:hover {
 	color: #fff !important;
 }
 
@@ -153,18 +163,18 @@ a.languageswitcher {
 	color: #fff;
 	font-family: 'Lato';
 	font-size: 20px;
+	line-height: 1.3em;
 }
 
 .callstoaction {
 	margin-top: 20px;
-	padding-bottom: 25%;
 }
 
 .section-herospace .call-to-action-1 {
     width: 50%;
     margin-top: 20px;
     padding: 15px 30px;
-    background: #d35626;
+    background: #d35724;
     font-size: 24px;
     font-weight: 800;
     color: #fff;
@@ -177,11 +187,15 @@ a.languageswitcher {
 	margin-right: 10px;
 }
 
+.section-herospace .call-to-action-1:hover {
+    background: #d27048;
+}
+
 .section-herospace .call-to-action-2 {
     width: 50%;
     margin-top: 20px;
     padding: 15px 60px;
-    background: #418ab7;
+    background: #418ab8;
     font-size: 24px;
     font-weight: 800;
     color: #fff;
@@ -193,18 +207,67 @@ a.languageswitcher {
 	text-transform: uppercase;
 }
 
+.section-herospace .call-to-action-2:hover {
+    background: #6497b7;
+}
+
 .col-md-offset-6 {
 	margin-left: 0;
 }
 
 div#patients-cover {
-	padding: 5%;
+	height: 442px;
 }
 
 div#patients-cover .section-content {
 	background: none !important;
 }
 
-div#say-it-louder .col-sm-6 {
+div#say-it-louder .col-sm-5 {
 	margin-left: 50%;
+}
+
+p.wp-caption-text {
+	color: #418ab8;
+	text-align: center;
+	font-size: 13px;
+}
+
+div#attachment_453 {
+	width: 70%;
+}
+
+p.contentp {
+	width: 80%;
+}
+
+p.captionstats {
+	color: #418ab8;
+	font-size: 20px;
+	line-height: 1.5em;
+	font-weight: 800;
+	text-align: center;
+	width: 200px;
+}
+
+p.statspic {
+	text-align: center;
+	width: 200px;
+}
+
+.section-basic h3 {
+	color: #d35626;
+	font-weight: 900;
+}
+
+.section-basic h2 {
+	font-weight: 400;
+}
+
+.bump {
+	margin: 20px 0;
+}
+
+.radio label, .checkbox label {
+	font-weight: 300;
 }

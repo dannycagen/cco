@@ -11,5 +11,6 @@
         
             <div class="col-sm-6"></div>
             </div>
+        <div class="arrow"><a href="#basicsection"><img src="http://cco.staging.hkapps.ca/app/themes/sti/assets/img/arrow.png" /></a></div>
 	</div>
 </div>

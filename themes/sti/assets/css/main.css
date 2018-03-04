@@ -434,8 +434,12 @@ body.fr #banner #nav-primary-collapse > .menu li > a {
 	color: #666666;
 	text-decoration:  none;
 	font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
     display: inline;
+}
+
+#contentinfo a:hover {
+	text-decoration: underline;
 }
 
 #contentinfo a.contactfooter {
@@ -488,6 +492,8 @@ body.fr #banner #nav-primary-collapse > .menu li > a {
 #contentinfo p {
   color: #666666;
 	font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 #contentinfo .copyright a {
   display: inline-block;
@@ -612,6 +618,7 @@ body.single #main .share a {
   font-weight: bold;
   text-decoration: none;
     text-align: center;
+    font-size: 13px;
 }
 
 #main .sharesocial a.twshare {
@@ -766,8 +773,10 @@ body.single-post #main .meta .author {
   *zoom: 1;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
-
+ /*background-size: cover;*/
+  background-size: 100% 100%; 
+    height: 100vh;
+object-fit: cover;
 }
 .section-herospace:before, .section-herospace:after {
   display: table;
@@ -789,7 +798,7 @@ body.single-post #main .meta .author {
 .section-herospace .section-content h1 {
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 900;
   line-height: 1.1;
 	color: #9436a8;
@@ -863,6 +872,8 @@ body.single-post #main .meta .author {
   }
   .section-herospace .section-content .header-body {
     width: auto;
+      line-height: 1.1em;
+      font-size: 1.1em;
   }
   .section-herospace .section-action {
     padding: 10px 24px 20px;
@@ -932,13 +943,13 @@ body.single-post #main .meta .author {
 .section-basic .section-content {
   padding: 100px 100px 60px;
   font-size: 16px;
-    width: 70%;
 }
 .section-basic .section-content h1 {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px !important;
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 900;
+    line-height: 0.5;
 }
 .section-basic .section-content li {
   margin-bottom: 8px;
@@ -961,6 +972,21 @@ body.single-post #main .meta .author {
     div#say-it-louder .col-sm-5 {
         margin-left: 10% !important;
         width: 95%;
+    }
+    
+    .section-herospace {
+        background-size: auto;
+    }
+    
+    .section-herospace .section-content h1 {
+        width: 50% !important;
+    }
+    
+    .arrow {
+       width:400px;
+    margin-left:-200px;
+    left:50%;
+        top: 300px;
     }
 
 }
@@ -1065,7 +1091,7 @@ body.fr .section-text-with-photo {
 }
 .section-thank-mp, .section-add-your-voice {
   position: relative;
-  padding: 10px 0px;
+  padding: 40px 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1109,9 +1135,10 @@ body.fr .section-text-with-photo {
   margin-bottom: 40px;
     font-size: 22px;
     font-weight: 500;
+    line-height: 1.4em;
 }
 .section-thank-mp .form-wrapper, .section-add-your-voice .form-wrapper {
-  padding: 20px 30px;
+  padding: 20px 25px;
   color: #fff;
 }
 .section-thank-mp .form-wrapper p, .section-add-your-voice .form-wrapper p {
@@ -1125,7 +1152,12 @@ body.fr .section-text-with-photo {
   color: #ee5337;
 }
 .section-thank-mp .form-wrapper a, .section-add-your-voice .form-wrapper a {
-  color: #ee5337;
+  color: #fff;
+    text-decoration: underline;
+}
+.section-thank-mp .form-wrapper a, .section-add-your-voice .form-wrapper a:hover {
+  color: #fff;
+    text-decoration: none;
 }
 .section-thank-mp .form-wrapper .has-error .radio, .section-add-your-voice .form-wrapper .has-error .radio {
   color: #a94442 !important;
@@ -1204,6 +1236,12 @@ body.fr .section-text-with-photo {
   text-transform: uppercase;
   white-space: normal;
 }
+
+.section-thank-mp form button, .section-add-your-voice form button:hover {
+      background: #d27048;
+    color: #fff;
+}
+
 .section-thank-mp form button.disabled, .section-add-your-voice form button.disabled, .section-thank-mp form button[disabled], .section-add-your-voice form button[disabled] {
   opacity: 1;
 }
@@ -1931,7 +1969,9 @@ div#patients-cover .section-content {
 	
 	div#patients-cover .section-content p {
     margin: 0 20px 10px 0px;
-    font-size: 22px;
+    font-size: 25px;
+        line-height: 35px;
+        padding-left: 50px;
 }
 	div#say-it-louder .section-content {
 		padding: 55px 60px 75px 10px;
@@ -1943,8 +1983,59 @@ div#patients-cover .section-content {
 		font-size: 28px;
 	}
 	div#say-it-louder {
+        height: 100% !important;
 	}
+    
+    .section-basic h2 {
+        font-size: 1.3em;
+    }
   
+    .bump {
+        margin: 10px 0 !important;
+    }
+    
+    p.contentp {
+        width: 95% !important;
+        color: #333;
+    font-weight: 400;
+    }
+    
+    div#patients-cover .section-content p {
+       font-size: 1.4em !important;
+    line-height: 1.4em !important;
+    }
+    
+    .section-thank-mp .section-content p, .section-add-your-voice .section-content p {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    
+    div#say-it-louder h3 {
+        font-size: 1.4em !important;
+    line-height: 1.4em !important;
+    padding-right: 35px;
+    }
+    
+    #contentinfo p {
+        margin-top: 10px;
+    }
+    
+    #contentinfo .footerlinks {
+        padding-top: 0 !important;
+    }
+    
+    #contentinfo {
+    padding: 40px 10px 60px;
+}
+    
+    img.jumptotop {
+    margin-top: 10px;
+    position: absolute;
+    text-align: right !important;
+    right: 2%;
+}
+    
 }
 
 
@@ -1971,7 +2062,9 @@ div#patients-cover .section-content {
 	
 	div#patients-cover .section-content p {
     margin: 0 20px 10px 0px;
-    font-size: 22px;
+     font-size: 25px;
+        line-height: 35px;
+        padding-left: 50px;
 }
 	div#say-it-louder .section-content {
 		    padding: 55px 60px 75px 40px;
@@ -2013,7 +2106,9 @@ div#patients-cover .section-content {
 	
 	div#patients-cover .section-content p {
     margin: 0 20px 10px 0px;
-    font-size: 22px;
+     font-size: 25px;
+        line-height: 35px;
+        padding-left: 50px;
 }
 	div#say-it-louder .section-content {
 		    padding: 55px 60px 75px 40px;
@@ -2116,10 +2211,10 @@ div#patients-cover .section-content {
 @media only screen and (max-width:500px) {
 
 	div#patients-cover .section-content {
-		background: rgba(0, 0, 0, .35);
+		/*background: rgba(0, 0, 0, .35);*/
 		border-radius: 0;
 		margin-top: 0;
-		padding: 80px 40px 100px !important;
+		padding: 40px 10px 40px !important;
 	}
 }
 
@@ -2141,7 +2236,8 @@ div#patients-cover .section-content {
 	}
 	
 	div#patients-cover .section-content p {
-		font-size: 13px;
+		 font-size: 25px;
+        line-height: 35px;
 	}
 	
 	div#patients-cover .section-content h1 {
@@ -2282,6 +2378,19 @@ div#patients-cover .section-content {
 		padding-left: 30px;
     padding-right: 50px;
 	}
+    
+    .section-herospace {
+    background-position: 100% top;
+    background-image: url(http://cco.staging.hkapps.ca/app/uploads/2018/03/mobile-bg.jpg) !important;
+}
+    
+    div#patients-cover .section-content p {
+        margin-left: -20px;
+    }
+    
+    div#say-it-louder .section-content {
+        margin-left: -20px;
+    }
 
 }
 
@@ -2316,10 +2425,14 @@ div#patients-cover .section-content {
 .section-herospace .section-content h1 {
 		width: 100%;
     margin-top: 80px !important;
+    font-size: 1.5em;
 	}
+
     
     .section-herospace .call-to-action-2 {
         display: inline-table;
+        margin-top: 30px !important;
+    width: 216px !important;
     }
 	
 	.section-herospace .section-content {
@@ -2352,6 +2465,7 @@ div#patients-cover .section-content {
 }
 div#patients-cover {
     background-position: 30% top;
+    height: 100% !important;
 }
 div#say-it-louder {
     background-position: 75% top;
@@ -2359,7 +2473,8 @@ div#say-it-louder {
 }
 
 div#patients-cover .section-content p {
-    font-size: 22px;
+     font-size: 25px;
+        line-height: 35px;
 }
 
 	div#patients-cover .section-content p span {
@@ -2367,8 +2482,31 @@ div#patients-cover .section-content p {
         color: #fff;
 }
 
+
+
 div#say-it-louder h3 {
     font-size: 30px;
-    line-height: 1.5em;
+    line-height: 40px;
     font-weight: 500;
+}
+
+img.bottomlogo {
+    margin-top: 15px;
+}
+
+img.jumptotop {
+    margin-top: 10px;
+}
+
+.form-control {
+       -webkit-box-shadow: none !important; 
+    box-shadow: none !important;
+}
+
+.arrow {
+    position: absolute;
+    width:400px;
+    margin-left:0;
+    left:50%;
+    bottom: 10px;
 }

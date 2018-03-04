@@ -4,7 +4,7 @@
 	<footer id="contentinfo" role="contentinfo">
 	<div class="container-fluid">
         <div class="col-sm-2">
-		<img src="<?php site_url(); ?>/app/themes/sti/assets/img/cco-logo.jpg" />
+		<img src="<?php site_url(); ?>/app/themes/sti/assets/img/cco-logo.jpg" class="bottomlogo" />
 	</div>
         <div class="col-sm-2">
 		<p>155 Lynden Rd, Unit 2<br />
@@ -20,8 +20,9 @@ Tel: (519) 752-2124 Ext.100<br />
 	<div class="col-sm-6">
 		
 	</div></div>
-		
-			
+        
+		<div class="col-sm-10"></div>
+			<div class="col-sm-2"><a href="#main"><img src="<?php site_url(); ?>/app/themes/sti/assets/img/jump-to-top.jpg" class="jumptotop" /></a></div>
 		
 	</footer>
 
